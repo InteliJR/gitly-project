@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Define a altura do corpo como 100% da altura da janela */
+  background-color: black;
+}
+
+#__next {
+  height: 100%; /* Define a altura do componente raiz (__next) como 100% da altura da janela */
+}
+
+.custom-border-gradient {
+  border-width: 1px; /* ou a largura desejada para a borda */
+  border-image: linear-gradient(
+    to right,
+    rgb(197, 6, 6),
+    blue
+  ); /* Cores do degradê */
+  border-image-slice: 1;
+}
+
+/* Estilizando a barra de rolagem */
+.scrollable-div {
+  max-height: 500px; /* ou a altura desejada para a sua div */
+  overflow-y: auto;
+
+  /* Propriedades da barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1; /* Cor da barra de rolagem */
+    border-radius: 6px; /* Cantos arredondados da barra de rolagem */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #888; /* Cor de fundo da barra de rolagem */
+    border-radius: 6px; /* Cantos arredondados do fundo da barra de rolagem */
+  }
+}
+
+.scrollable-x {
+  max-width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #888;
+    border-radius: 6px;
+  }
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppins-thin;
+  src: url(./fonts/poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(./fonts/poppins/Poppins-Bold.ttf);
+}
+
+.poppins-font-bold {
+  font-family: poppins-bold;
+}
+
+.poppins-font-thin {
+  font-family: poppins-thin;
+}
+
+.poppins-font {
+  font-family: poppins;
+}
