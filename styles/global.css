@@ -63,30 +63,3 @@ body {
     border-radius: 6px;
   }
 }
-
-@font-face {
-  font-family: poppins;
-  src: url(./fonts/poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-  font-family: poppins-thin;
-  src: url(./fonts/poppins/Poppins-Thin.ttf);
-}
-
-@font-face {
-  font-family: poppins-bold;
-  src: url(./fonts/poppins/Poppins-Bold.ttf);
-}
-
-.poppins-font-bold {
-  font-family: poppins-bold;
-}
-
-.poppins-font-thin {
-  font-family: poppins-thin;
-}
-
-.poppins-font {
-  font-family: poppins;
-}
